@@ -1,8 +1,8 @@
 {
   "name": "react-user",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React components and utility for user ",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist/",
     "build": "babel src --out-dir dist --source-maps",
