@@ -19,7 +19,6 @@ class UserProvider extends Component {
       return
     }
     if (this.props.accountClient) {
-      console.log(this.props.accountClient)
       this.props.accountClient.on('authenticated', user =>  this.setState({user}) )
       this.props.accountClient.on('unauthenticated', () =>  this.setState({user: undefined}) )
     }    
