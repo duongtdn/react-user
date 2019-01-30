@@ -4,7 +4,7 @@
   "description": "React components and utility for user ",
   "main": "index.js",
   "scripts": {
-    "clearn": "rm -rf dist/",
+    "clean": "rm -rf dist/",
     "build": "babel src --out-dir dist --source-maps",
     "prepare": "npm run clean & npm run build",
     "test": "webpack-dev-server --config webpack.dev.config.js  --port 3300 --host 0.0.0.0 --watch-poll"
