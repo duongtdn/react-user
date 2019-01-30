@@ -1,6 +1,6 @@
 {
   "name": "react-user",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React components and utility for user ",
   "main": "index.js",
   "scripts": {
