@@ -10,7 +10,7 @@ class UserProvider extends Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     // escape server side
     if (typeof window === 'undefined') {
       if (this.props.user) {
@@ -22,7 +22,10 @@ class UserProvider extends Component {
       this.props.accountClient.on('updated', user =>  this.setState({user}) )
       this.props.accountClient.on('authenticated', user =>  this.setState({user}) )
       this.props.accountClient.on('unauthenticated', () =>  this.setState({user: undefined}) )
-    }    
+    }
+    if (this.props.accountClient.get('user')) {
+      this.setState({ user: this.props.accountClient.get('user') })
+    }
   }
 
   render() {
