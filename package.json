@@ -28,7 +28,7 @@
     "react-dom": "^16.7.0"
   },
   "peerDependencies": {
-    "account-realm-client": "^1.0.1"
+    "account-realm-client": "^1.2.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
